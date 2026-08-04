@@ -11,3 +11,7 @@ function formatFullName(firstName, lastName) {
 
   return `${lastName}, ${firstName}`;
 }
+
+// Test
+console.log(formatFullName("john", "doe"));
+console.log(formatFullName("", "doe"));
