@@ -15,3 +15,19 @@ function formatFullName(firstName, lastName) {
 // Test
 console.log(formatFullName("john", "doe"));
 console.log(formatFullName("", "doe"));
+
+// Task 2
+function calculateTotalCost(price, quantity, taxRate) {
+  if (
+    typeof price !== "number" ||
+    typeof quantity !== "number" ||
+    typeof taxRate !== "number"
+  ) {
+    return "Invalid input.";
+  }
+
+  let totalCost = (price * quantity) * (1 + taxRate);
+
+  return totalCost;
+}
+
