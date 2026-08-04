@@ -31,3 +31,18 @@ function calculateTotalCost(price, quantity, taxRate) {
   return totalCost;
 }
 
+// Test
+console.log(calculateTotalCost(10, 2, 0.07));
+console.log(calculateTotalCost("10", 2, 0.07));
+
+
+// Task 3
+function checkEligibility(age, isEmployed) {
+  if (age > 18 && isEmployed) {
+    return "Eligible";
+  } else if (age > 18 && !isEmployed) {
+    return "Conditionally eligible";
+  } else {
+    return "Not eligible";
+  }
+}
