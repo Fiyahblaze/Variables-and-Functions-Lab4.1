@@ -74,3 +74,14 @@ function calculateTotalCost(price, quantity, taxRate, discount = 0) {
 console.log(checkEligibility(25, true));
 console.log(checkEligibility(25, false));
 console.log(checkEligibility(18, true));
+
+// Task 4
+function calculateTotalCost(price, quantity, taxRate, discount = 0) {
+  if (
+    typeof price !== "number" ||
+    typeof quantity !== "number" ||
+    typeof taxRate !== "number" ||
+    typeof discount !== "number"
+  ) {
+    return "Invalid input.";
+  }
