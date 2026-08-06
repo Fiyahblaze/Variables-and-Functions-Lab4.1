@@ -71,5 +71,6 @@ function calculateTotalCost(price, quantity, taxRate, discount = 0) {
 }
 
 // Test
-console.log(calculateTotalCost(10, 2, 0.07));
-console.log(calculateTotalCost(10, 2, 0.07, 5));
+console.log(checkEligibility(25, true));
+console.log(checkEligibility(25, false));
+console.log(checkEligibility(18, true));
