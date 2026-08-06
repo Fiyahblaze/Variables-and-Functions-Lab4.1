@@ -47,10 +47,9 @@ function checkEligibility(age, isEmployed) {
   }
 }
 
-
 // Test
 console.log(checkEligibility(25, true));
-console.log(checkEligibility(17, true));
+console.log(checkEligibility(18, true));
 console.log(checkEligibility(25, false));
 
 // Task 4
