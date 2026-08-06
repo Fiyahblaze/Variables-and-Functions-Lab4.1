@@ -85,3 +85,13 @@ function calculateTotalCost(price, quantity, taxRate, discount = 0) {
   ) {
     return "Invalid input.";
   }
+
+   let subtotal = (price * quantity) - discount;
+  let totalCost = subtotal * (1 + taxRate);
+
+  return totalCost;
+}
+
+// Test
+console.log(calculateTotalCost(10, 2, 0.07));
+console.log(calculateTotalCost(10, 2, 0.07, 5));
